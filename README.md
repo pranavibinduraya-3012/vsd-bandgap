@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-11-15 at 07 07 55_7d0d309d](https://github.com/user-attachments/assets/fd3434ab-15ca-407e-be07-1ae07ca8a2e4)# Analog Bandgap Reference Voltage Circuit Design
+# Analog Bandgap Reference Voltage Circuit Design
 
 This project documents my complete design and characterization of an Analog Bandgap Voltage Reference circuit using the SKY130 PDK, covering schematic design and SPICE simulations in Ngspice, PVT analysis, and layout implementation using Magic.
 

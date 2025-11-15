@@ -19,10 +19,11 @@ The core principle behind a Bandgap Reference is to combine two temperature-depe
 - ΔV<sub>BE</sub> increases with temperature (positive temperature coefficient).
   
 By appropriately scaling and summing these two quantities, the negative temperature coefficient of VBE and the positive coefficient of ΔVBE cancel out, producing a **constant temperature-independent** reference voltage. This output is typically around **1.2 V**, the theoretical silicon bandgap voltage extrapolated to 0 K.
+V<sub>ref</sub>(T) ≈ V<sub>BE</sub>(T) + k · ΔV<sub>BE</sub>(T)
 
 ---
 
-## 📌 Key Performance Requirements
+## 📌 Performance Requirements
 
 A practical BGR must exhibit:
 
@@ -32,29 +33,26 @@ A practical BGR must exhibit:
 - **Stable bias currents** for driving analog and mixed-signal blocks  
 
 ---
+ 
+### 🗝️ Key Features
+- Provides a **temperature-stable voltage reference** (~1.2 V)
+- **Insensitive** to power supply and process variations
+- Can be implemented using **bipolar or CMOS processes**
+- Widely used in **precision analog and mixed-signal ICs**
 
-## 🎯 Project Summary
+---
 
-Thus, the Bandgap Reference serves as the backbone of reliable precision systems.  
-This project implements and characterizes a complete BGR using the **SKY130 open-source PDK**, covering:
+### ⚙ Working Principle (Simplified)
+At its core, the Bandgap Reference circuit works as follows:
+1. Generate a CTAT voltage from a diode-connected BJT (V<sub>BE</sub>).
+2. Generate a PTAT voltage using two BJTs with different emitter area ratios.
+3. Add the PTAT voltage (positive TC) to the CTAT voltage (negative TC) in proper proportions.
+4. The resulting sum is a **temperature-independent reference voltage**.
 
-- Schematic design  
-- SPICE simulation in ngspice  
-- Temperature analysis  
-- Line and load regulation  
-- Layout design using Magic  
+<img width="698" height="268" alt="Screenshot 2025-10-31 095749" src="https://github.com/user-attachments/assets/29a07377-a79a-483f-ac21-dac1115c8883" />
 
 
-A Bandgap Reference (BGR) is a foundational analog block that provides a stable DC reference voltage with minimal sensitivity to temperature, supply (line) variation, and process spread. Such a stable reference is critical for mixed-signal systems—powering ADCs, DACs, LDO/voltage regulators, and bias networks—where accuracy and repeatability matter.
-The concept of the Bandgap Reference is based on combining two temperature-dependent voltages:
 
-1. **CTAT (Complementary to Absolute Temperature) Voltage:**  
-   - Typically derived from the **base-emitter voltage (V<sub>BE</sub>)** of a bipolar transistor.  
-   - V<sub>BE</sub> decreases with increasing temperature (negative temperature coefficient).
 
-2. **PTAT (Proportional to Absolute Temperature) Voltage:**  
-   - Generated from the **difference in base-emitter voltages (ΔV<sub>BE</sub>)** between two transistors operating at different current densities.  
-   - ΔV<sub>BE</sub> increases with temperature (positive temperature coefficient).
 
-By carefully scaling and summing these two voltages, the opposing temperature effects cancel out, resulting in a **constant output voltage**—typically around **1.2 V**, which corresponds to the bandgap voltage of silicon at 0 K.
-V<sub>ref</sub>(T) ≈ V<sub>BE</sub>(T) + k · ΔV<sub>BE</sub>(T)
+

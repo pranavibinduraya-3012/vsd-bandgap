@@ -650,9 +650,6 @@ We are going to use the **Magic VLSI tool** for our layout design.
 
 ---
 
-
-
-
 ##  Blocks Design
 
 ###  Design of NFETs
@@ -680,10 +677,10 @@ The layout is carefully optimized to maintain **symmetry**, **matching accuracy*
    - All gates are oriented in the **same direction** for consistent channel stress.  
    - Source and drain regions are shared between adjacent devices to reduce area and parasitics.
 
-``` bash
-@chandranshu24-hue ➜ /workspaces/vsd-bandgap/bandgap/layout (main) $ magic -T sky130A.tech  nfets.mag
-```
-<img width="1217" height="740" alt="NFETS" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/7343661f156ccdb7f8250aa00120981e5913610a/pics/results/nfets.png" />
+<img width="1343" height="393" alt="Screenshot 2025-11-15 164014" src="https://github.com/user-attachments/assets/fece3c5f-61af-4299-aff4-95f2a1d0f473" />
+
+![WhatsApp Image 2025-11-15 at 07 07 59_49506d5f](https://github.com/user-attachments/assets/e0b8406f-af51-4bbb-b5ee-bf5c091e7e29)
+
 
 ###  Design of PFETs
 
@@ -709,19 +706,24 @@ The layout emphasizes **device matching**, **isolation**, and **robustness again
 5. **Orientation Consistency:**  
    - All gates are aligned in the same direction for uniform channel characteristics and ease of routing.
 
-<img width="1217" height="740" alt="pfets" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/7343661f156ccdb7f8250aa00120981e5913610a/pics/results/pfets.png" />
+<img width="1089" height="576" alt="Screenshot 2025-11-15 164201" src="https://github.com/user-attachments/assets/3dafabd4-97ba-4f69-b51d-9ad4ab3292d5" />
+
 
 ###  Design of RESBANK
-<img width="1182" height="752" alt="resbank1" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/7343661f156ccdb7f8250aa00120981e5913610a/pics/results/resbank1.png" />
-<img width="1182" height="752" alt="resbankk2" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/7343661f156ccdb7f8250aa00120981e5913610a/pics/results/resbank2.png" />
+
+![WhatsApp Image 2025-11-15 at 07 07 59_c3cb0a45](https://github.com/user-attachments/assets/a6145523-6a14-431a-8059-c3ced1a72009)
 
 ###  Design of PNP10
 We have created the layout by putting all the PNPs together, with appropriate matching, and used dummies to enhance noise performance.
-<img width="1196" height="690" alt="pnp10" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/0472ad8b2a3a13e316923d9f10820049e1a99410/pics/results/pnp10.png" />
+
+![WhatsApp Image 2025-11-15 at 07 08 00_a8ac9cc0](https://github.com/user-attachments/assets/c29adb66-1708-4044-b91e-ad213a145601)
+
 
 ###  Design of STARTERNFET
 We placed the the two w=1, l=7 NFETs together with a guardring to desingn the STATRTERNFET.
-<img width="962" height="315" alt="starternfet" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/0472ad8b2a3a13e316923d9f10820049e1a99410/pics/results/starnet.png" />
+
+![WhatsApp Image 2025-11-15 at 07 08 00_24a4c6f8](https://github.com/user-attachments/assets/b51bd961-396d-498f-83ab-3548c7674451)
+
 
 ###  TOP LEVEL DESIGN
 The **top-level layout** integrates all the sub-blocks of the Bandgap Reference (BGR) circuit — including NFETs, PFETs, resistor bank, BJT, and the startup circuit — into a single unified layout using **Magic VLSI**.
@@ -769,7 +771,12 @@ The layout is organized for optimal matching, symmetry, and noise immunity. Each
 
 ####  Layout Visualization:
 The image below shows the **complete top-level BGR layout**, where all components are interconnected and verified for DRC cleanliness.
-<img width="1163" height="774" alt="top" src="https://github.com/bharathmr1012/Bharath_Bandgap_workshop/blob/fb8a5d9c6791a77ece683f55d6c34babbd3e9fd2/pics/results/top.png" />
+
+![IMG-20251115-WA0025 1](https://github.com/user-attachments/assets/b24efb4a-7088-4906-b780-f0d900998596)
+
+![WhatsApp Image 2025-11-15 at 07 08 01_6f5e0557](https://github.com/user-attachments/assets/f8d57168-50e4-4aa8-87a4-771305f38204)
+
+
  *This top-level layout ensures electrical symmetry, thermal stability, and process tolerance for a robust and accurate Bandgap Reference circuit.*
 
 

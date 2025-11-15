@@ -774,12 +774,15 @@ The image below shows the **complete top-level BGR layout**, where all component
 
 ![IMG-20251115-WA0025 1](https://github.com/user-attachments/assets/b24efb4a-7088-4906-b780-f0d900998596)
 
+
+##  LVS AND POSTLAYOUT STIMULATION
+
 ![WhatsApp Image 2025-11-15 at 07 08 01_6f5e0557](https://github.com/user-attachments/assets/f8d57168-50e4-4aa8-87a4-771305f38204)
+
+![WhatsApp Image 2025-11-15 at 07 08 01_33ed11c7](https://github.com/user-attachments/assets/b2c6dc54-720e-430d-80b2-82e1ddab5a57)
 
 
  *This top-level layout ensures electrical symmetry, thermal stability, and process tolerance for a robust and accurate Bandgap Reference circuit.*
 
-
-
-
+### AUTHOR- BINDU PRANAVI RAYA UNDER GUIDANCE OF Prof. Santunu Sarangi in collaboration with VSD
 

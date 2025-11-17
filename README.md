@@ -162,6 +162,7 @@ The BGR circuit operates by **adding** the CTAT and PTAT voltages in proper prop
 ####  1.1.1 CTAT VOLTAGE GENERATION
 Semiconductor diodes typically exhibit CTAT (Complementary to Absolute Temperature) behavior. When a constant current flows through a forward-biased diode, an increase in temperature causes the voltage across the diode to decrease. Experimentally, the rate of decrease of the diode’s forward voltage with temperature is approximately –2 mV/°C.
 
+
 ![IMG-20251115-WA0003 1](https://github.com/user-attachments/assets/6e13b34f-88b8-4988-bf0f-1da965326dd7)
 
 ![IMG-20251115-WA0002 1](https://github.com/user-attachments/assets/9dbf44ee-6a47-479d-be32-10705858b2f0)
@@ -512,31 +513,40 @@ A **straight line with a negative slope** in the **V_BE vs. Temperature** plot:
 
 After simulation we can get a wavefrom like below, and from the wavefrom we can see the CTAT behaviour of the BJT, and can find the slope.
 
-<img width="721" height="608" alt="Screenshot 2025-11-15 160647" src="https://github.com/user-attachments/assets/fd49e4cc-17d4-4440-b027-93bae0b86206" />
+<img width="1093" height="812" alt="Screenshot 2025-11-17 203734" src="https://github.com/user-attachments/assets/4dbe79af-dd46-4c06-b0ec-503231723465" />
+
+<img width="1261" height="878" alt="Screenshot 2025-11-17 204652" src="https://github.com/user-attachments/assets/2b226ba2-cc2e-48b9-aec7-80e58e3646af" />
+
+<img width="1257" height="852" alt="Screenshot 2025-11-17 205148" src="https://github.com/user-attachments/assets/4064e1cd-d712-44af-9187-78046a163402" />
+
+<img width="988" height="851" alt="Screenshot 2025-11-17 205120" src="https://github.com/user-attachments/assets/984ea76b-279b-48d1-bcd9-2678ffd08b19" />
 
 ### CTAT Voltage generation with Multiple BJT netlist
 
 In this simulation we will check the CTAT voltage across the 8 parallel connected BJTs
 
-![WhatsApp Image 2025-11-15 at 07 07 55_7d0d309d](https://github.com/user-attachments/assets/4f3b3956-4d4e-4f49-83ec-e92b63c0416d)
+<img width="1062" height="911" alt="Screenshot 2025-11-17 205415" src="https://github.com/user-attachments/assets/188e9349-2203-4198-90d1-8add8d123278" />
+
 
 we can see the slope is increasing in case of multiple BJTs.
 
 ### CTAT Voltage generation with different current source values netlist
 
-![WhatsApp Image 2025-11-15 at 07 07 55_94ae1384](https://github.com/user-attachments/assets/a2a9b371-8daf-4461-963f-2c1f33d013c8)
+<img width="1076" height="919" alt="Screenshot 2025-11-17 205915" src="https://github.com/user-attachments/assets/6004c954-1eb0-47bb-85d5-b80cf0371cc2" />
+
 
 ###   PTAT Simulation
 
 #### PTAT Voltage generation with VCVS
 
-![WhatsApp Image 2025-11-15 at 07 07 55_f1c8f594](https://github.com/user-attachments/assets/47d6f1f4-56b2-4c4c-88b8-560c2d8e7cc3)
+<img width="1665" height="907" alt="Screenshot 2025-11-17 213454" src="https://github.com/user-attachments/assets/67fd9256-a1bf-4da2-826f-b82d721b2498" />
+
 
 ###  BGR using Ideal OpAmp
 
 Now after simulating all our components, let's quick check our BGR behaviour using one **VCVS** as an **ideal OpAmp**.
 
-<img width="196" height="154" alt="Screenshot 2025-11-15 162033" src="https://github.com/user-attachments/assets/75d6757a-f611-40cc-b821-34073320943d" />
+<img width="196" height="174" alt="Screenshot 2025-11-15 162033" src="https://github.com/user-attachments/assets/75d6757a-f611-40cc-b821-34073320943d" />
 
 In this simulation, we should get the reference voltage as an **umbrella-shaped curve** and it should be approximately **1.2V**.
 

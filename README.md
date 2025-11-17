@@ -699,8 +699,6 @@ The layout is carefully optimized to maintain **symmetry**, **matching accuracy*
 <img width="1638" height="883" alt="Screenshot 2025-11-17 221231" src="https://github.com/user-attachments/assets/4d07a299-cda4-49a9-aeaa-feba998ccbce" />
 
 
-![WhatsApp Image 2025-11-15 at 07 07 59_49506d5f](https://github.com/user-attachments/assets/e0b8406f-af51-4bbb-b5ee-bf5c091e7e29)
-
 ###  Design of NFETs
 
 <img width="1255" height="906" alt="Screenshot 2025-11-18 001511" src="https://github.com/user-attachments/assets/038a282c-708b-49cf-8bf9-51666689ca12" />

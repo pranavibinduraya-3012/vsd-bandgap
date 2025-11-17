@@ -550,16 +550,13 @@ Now after simulating all our components, let's quick check our BGR behaviour usi
 
 In this simulation, we should get the reference voltage as an **umbrella-shaped curve** and it should be approximately **1.2V**.
 
-![WhatsApp Image 2025-11-15 at 07 07 56_3eb705d4](https://github.com/user-attachments/assets/f4be7676-7849-455a-8fff-dbeb3128e776)
+<img width="1626" height="887" alt="Screenshot 2025-11-17 214132" src="https://github.com/user-attachments/assets/a88abefa-4360-427a-afa0-f0fdde86a504" />
 
-![IMG-20251115-WA0021 1](https://github.com/user-attachments/assets/47c99899-313e-4db9-8441-82fa12b21b4d)
 
 ###  BGR with selfbias current mirror
 Now we will replace the ideal Op-Amp with self-biased current mirror which is our proposed design. We expect same type of output as in case of ideal OpAmp based BGR. We will also check for different corners, and will see how our circuit is performing in different corners. 
 
-![IMG-20251115-WA0020 1](https://github.com/user-attachments/assets/095f294f-8523-4fe5-9fb8-d062a68c3f9a)
-
-<img width="845" height="757" alt="Screenshot 2025-11-15 162618" src="https://github.com/user-attachments/assets/36d11609-a926-4ca8-974b-3339343665b0" />
+<img width="1618" height="872" alt="Screenshot 2025-11-17 214357" src="https://github.com/user-attachments/assets/279e9748-ecb9-4c4e-a905-2b35ff130c74" />
 
 
  ### tt corner stimulation
@@ -641,15 +638,27 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 .end
 ```
 
+<img width="1187" height="844" alt="Screenshot 2025-11-17 215321" src="https://github.com/user-attachments/assets/268b4d8c-cec8-40e4-ae99-ec0b14ae00aa" />
+
+
+
 
 ### Behaviour in FF corner
 
-![WhatsApp Image 2025-11-15 at 07 07 58_824ffaf1](https://github.com/user-attachments/assets/82728a6f-da3a-4260-9173-96c2f919e35c)
+<img width="1647" height="880" alt="Screenshot 2025-11-17 214700" src="https://github.com/user-attachments/assets/87d9ac1b-b663-4b58-a41e-b4aa12ab4054" />
+
+<img width="1201" height="827" alt="Screenshot 2025-11-17 214750" src="https://github.com/user-attachments/assets/1129c8e7-8b7e-4803-839d-564d95362c9e" />
 
 
 ### Behaviour in ss corner
 
-![WhatsApp Image 2025-11-15 at 07 07 58_990e067f](https://github.com/user-attachments/assets/f363689c-f034-48da-b395-a8e40f1d0764)
+<img width="1596" height="827" alt="Screenshot 2025-11-17 214951" src="https://github.com/user-attachments/assets/f154a23c-3f73-4eb9-bb51-a882aa2a3618" />
+
+<img width="900" height="841" alt="Screenshot 2025-11-17 215033" src="https://github.com/user-attachments/assets/2ab6c36b-4d30-41de-8b20-04338749cb44" />
+
+### Transient Analysis
+
+<img width="1634" height="888" alt="Screenshot 2025-11-17 215820" src="https://github.com/user-attachments/assets/46d22a3b-b532-4c17-91de-e128c0b7f29e" />
 
 
 ## 4. Layout Design
@@ -687,7 +696,8 @@ The layout is carefully optimized to maintain **symmetry**, **matching accuracy*
    - All gates are oriented in the **same direction** for consistent channel stress.  
    - Source and drain regions are shared between adjacent devices to reduce area and parasitics.
 
-<img width="1343" height="393" alt="Screenshot 2025-11-15 164014" src="https://github.com/user-attachments/assets/fece3c5f-61af-4299-aff4-95f2a1d0f473" />
+<img width="1638" height="883" alt="Screenshot 2025-11-17 221231" src="https://github.com/user-attachments/assets/4d07a299-cda4-49a9-aeaa-feba998ccbce" />
+
 
 ![WhatsApp Image 2025-11-15 at 07 07 59_49506d5f](https://github.com/user-attachments/assets/e0b8406f-af51-4bbb-b5ee-bf5c091e7e29)
 

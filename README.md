@@ -701,6 +701,10 @@ The layout is carefully optimized to maintain **symmetry**, **matching accuracy*
 
 ![WhatsApp Image 2025-11-15 at 07 07 59_49506d5f](https://github.com/user-attachments/assets/e0b8406f-af51-4bbb-b5ee-bf5c091e7e29)
 
+###  Design of NFETs
+
+<img width="1255" height="906" alt="Screenshot 2025-11-18 001511" src="https://github.com/user-attachments/assets/038a282c-708b-49cf-8bf9-51666689ca12" />
+
 
 ###  Design of PFETs
 
@@ -726,23 +730,24 @@ The layout emphasizes **device matching**, **isolation**, and **robustness again
 5. **Orientation Consistency:**  
    - All gates are aligned in the same direction for uniform channel characteristics and ease of routing.
 
-<img width="1089" height="576" alt="Screenshot 2025-11-15 164201" src="https://github.com/user-attachments/assets/3dafabd4-97ba-4f69-b51d-9ad4ab3292d5" />
-
+<img width="1216" height="912" alt="Screenshot 2025-11-18 001601" src="https://github.com/user-attachments/assets/ecc4f9f8-16ba-4413-80be-478359ce5188" />
 
 ###  Design of RESBANK
 
-![WhatsApp Image 2025-11-15 at 07 07 59_c3cb0a45](https://github.com/user-attachments/assets/a6145523-6a14-431a-8059-c3ced1a72009)
+<img width="1277" height="904" alt="Screenshot 2025-11-18 001710" src="https://github.com/user-attachments/assets/51b94eee-3445-4a6b-bf81-54bbcca4f3b7" />
+
 
 ###  Design of PNP10
 We have created the layout by putting all the PNPs together, with appropriate matching, and used dummies to enhance noise performance.
 
-![WhatsApp Image 2025-11-15 at 07 08 00_a8ac9cc0](https://github.com/user-attachments/assets/c29adb66-1708-4044-b91e-ad213a145601)
+<img width="1292" height="894" alt="Screenshot 2025-11-18 001618" src="https://github.com/user-attachments/assets/ef139d62-1a4e-401f-8f09-10f9a024e5e1" />
 
 
 ###  Design of STARTERNFET
 We placed the the two w=1, l=7 NFETs together with a guardring to desingn the STATRTERNFET.
 
-![WhatsApp Image 2025-11-15 at 07 08 00_24a4c6f8](https://github.com/user-attachments/assets/b51bd961-396d-498f-83ab-3548c7674451)
+<img width="1251" height="904" alt="Screenshot 2025-11-18 001745" src="https://github.com/user-attachments/assets/370b956f-58c1-4369-8620-c528bb029a19" />
+
 
 
 ###  TOP LEVEL DESIGN
@@ -792,14 +797,12 @@ The layout is organized for optimal matching, symmetry, and noise immunity. Each
 ####  Layout Visualization:
 The image below shows the **complete top-level BGR layout**, where all components are interconnected and verified for DRC cleanliness.
 
-![IMG-20251115-WA0025 1](https://github.com/user-attachments/assets/b24efb4a-7088-4906-b780-f0d900998596)
+<img width="1259" height="895" alt="Screenshot 2025-11-18 001907" src="https://github.com/user-attachments/assets/4055fabb-42c1-4dee-b3a8-29818512645d" />
 
 
 ##  LVS AND POSTLAYOUT STIMULATION
 
-![WhatsApp Image 2025-11-15 at 07 08 01_6f5e0557](https://github.com/user-attachments/assets/f8d57168-50e4-4aa8-87a4-771305f38204)
-
-![WhatsApp Image 2025-11-15 at 07 08 01_33ed11c7](https://github.com/user-attachments/assets/b2c6dc54-720e-430d-80b2-82e1ddab5a57)
+<img width="1690" height="897" alt="Screenshot 2025-11-18 003838" src="https://github.com/user-attachments/assets/24d3c1a6-d481-496f-98e7-1c32f2c6316c" />
 
 
  *This top-level layout ensures electrical symmetry, thermal stability, and process tolerance for a robust and accurate Bandgap Reference circuit.*
